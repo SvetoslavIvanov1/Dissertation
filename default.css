@@ -1,0 +1,270 @@
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #2C3E50;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #000000;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+
+
+a
+{
+	color: #2980B9;
+}
+
+
+.container
+{
+	overflow: hidden;
+	margin: 0em auto;
+	width: 1000px;
+}
+
+
+
+
+	.button
+{
+	display: inline-block;
+	padding: 1em 3em 1em 2em;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.90em;
+	color: #FFF;
+}
+
+.button:before
+{
+	display: inline-block;
+	background: #FFC31F;
+	margin-right: 1em;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #272925;
+}
+
+
+/* The 3 boxes are set with a fixed width so that they do not leave their box*/
+
+	.boxA,  .boxB,  .boxC
+{
+	width: 300px;
+}
+
+.boxA,  .boxB
+{
+	float: left;
+	margin-right: 50px;
+}
+
+.boxC
+{
+	float: right;
+}
+
+
+
+
+
+#wrapper
+{
+	background: #FFF;
+}
+
+
+
+	#header-wrapper
+{
+	background: url(images/banner.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#header
+{
+	position: relative;
+	padding: 15em 0em;
+}
+
+
+
+	
+
+#logo h1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1.5em 2em;
+	background: #3498DB;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+
+	#menu
+{
+	position: absolute;
+	top: 4em;
+	right: 0;
+}
+
+#menu ul
+{
+	display: inline-block;
+	padding: 1em 0em;
+	background: #3498DB;
+	border-radius: 5px;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	padding: 1em 1.5em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	font-weight: 600;
+	color: #FFF;
+}
+
+
+
+
+
+	#page
+	{
+		padding-bottom: 5em;
+	}
+	
+	#page h2
+	{
+		padding-bottom: 1.5em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+
+
+
+
+
+
+.title
+{
+	margin-bottom: 3em;
+	text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title h2
+{
+	font-size: 2.8em;
+	font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title .byline
+{
+	font-size: 1.1em;
+	color: #6F6F6F;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+#staff
+{
+	padding: 5em 0em;
+}
+
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color:#008CBA ;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+
+}
+
+.boxA:hover .overlay {
+    opacity: 0.8;
+
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
